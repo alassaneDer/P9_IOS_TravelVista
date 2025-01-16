@@ -20,6 +20,8 @@
 		42B90C1F2B2A056000779364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1D2B2A056000779364 /* LaunchScreen.storyboard */; };
 		ED7D0F7A2D37DEAB00D2C8C6 /* TitleViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7D0F792D37DEAB00D2C8C6 /* TitleViewSwiftUI.swift */; };
 		ED7D0F7D2D37EA7B00D2C8C6 /* Colors+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7D0F7C2D37EA7B00D2C8C6 /* Colors+Extensions.swift */; };
+		EDA97B1C2D3940DF0083EEED /* CustomCellSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA97B1B2D3940DF0083EEED /* CustomCellSwiftUI.swift */; };
+		EDA97B1E2D394D9F0083EEED /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA97B1D2D394D9F0083EEED /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		42B90C202B2A056000779364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED7D0F792D37DEAB00D2C8C6 /* TitleViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewSwiftUI.swift; sourceTree = "<group>"; };
 		ED7D0F7C2D37EA7B00D2C8C6 /* Colors+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extensions.swift"; sourceTree = "<group>"; };
+		EDA97B1B2D3940DF0083EEED /* CustomCellSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellSwiftUI.swift; sourceTree = "<group>"; };
+		EDA97B1D2D394D9F0083EEED /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +58,8 @@
 		424C31BE2B30956400279238 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				424C31BC2B30955E00279238 /* DetailViewController.swift */,
-				42B90C162B2A055B00779364 /* ListViewController.swift */,
-				424C31BA2B30919400279238 /* CustomCell.swift */,
-				424C31BF2B30A39B00279238 /* MapViewController.swift */,
-				ED7D0F792D37DEAB00D2C8C6 /* TitleViewSwiftUI.swift */,
+				EDA97B1A2D3940990083EEED /* SwiftUI */,
+				EDA97B192D3940900083EEED /* UIKit */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -76,6 +77,7 @@
 		42B90C062B2A055A00779364 = {
 			isa = PBXGroup;
 			children = (
+				42B90C122B2A055B00779364 /* AppDelegate.swift */,
 				42B90C112B2A055B00779364 /* TravelVista */,
 				42B90C102B2A055B00779364 /* Products */,
 			);
@@ -95,7 +97,6 @@
 				ED7D0F7B2D37EA6000D2C8C6 /* Utils */,
 				424C31C92B30ABE600279238 /* Model */,
 				424C31BE2B30956400279238 /* Views */,
-				42B90C122B2A055B00779364 /* AppDelegate.swift */,
 				42B90C182B2A055B00779364 /* Main.storyboard */,
 				42B90C1B2B2A056000779364 /* Assets.xcassets */,
 				42B90C1D2B2A056000779364 /* LaunchScreen.storyboard */,
@@ -110,6 +111,27 @@
 				ED7D0F7C2D37EA7B00D2C8C6 /* Colors+Extensions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		EDA97B192D3940900083EEED /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				424C31BF2B30A39B00279238 /* MapViewController.swift */,
+				424C31BA2B30919400279238 /* CustomCell.swift */,
+				42B90C162B2A055B00779364 /* ListViewController.swift */,
+				424C31BC2B30955E00279238 /* DetailViewController.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		EDA97B1A2D3940990083EEED /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				ED7D0F792D37DEAB00D2C8C6 /* TitleViewSwiftUI.swift */,
+				EDA97B1B2D3940DF0083EEED /* CustomCellSwiftUI.swift */,
+				EDA97B1D2D394D9F0083EEED /* ListView.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +214,8 @@
 				424C31C02B30A39B00279238 /* MapViewController.swift in Sources */,
 				42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */,
 				424C31BD2B30955E00279238 /* DetailViewController.swift in Sources */,
+				EDA97B1E2D394D9F0083EEED /* ListView.swift in Sources */,
+				EDA97B1C2D3940DF0083EEED /* CustomCellSwiftUI.swift in Sources */,
 				424C31BB2B30919400279238 /* CustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
